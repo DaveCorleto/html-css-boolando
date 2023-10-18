@@ -79,6 +79,7 @@ main {
     display: flex;
     /* justify-content: space-between; */
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .col {
@@ -109,6 +110,7 @@ main {
     position: absolute;
     top: 20px;
     right: 10px;
+    z-index: 499;
 }
 .top-bar {
     display: flex;
@@ -117,6 +119,7 @@ main {
     left: 0;
     bottom: 50px;
     padding-left: 10px;
+    z-index: 500;
 }
 
 .discount {
@@ -126,6 +129,10 @@ main {
 .sustainability {
     background-color: green;
     margin-left: 5px;
+}
+
+.none {
+    display: none;
 }
 
 .text-white {
@@ -176,6 +183,7 @@ main {
 
 footer {
     width: 100%;
+    margin-top: 50px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(7, 7, 41);
@@ -218,6 +226,18 @@ footer {
 
 /* Regole per far sparire l'immagine... */
 
-.col:hover .card {
-    /* display: none; */
+.col:hover .card .over {
+    z-index: 3;
+}
+.over {
+    z-index: 5;
+    position: relative;
+}
+
+.under {
+    position: relative;
+    top: 0;
+    left: -100%;
+    z-index: 4;
+    
 }
