@@ -4,12 +4,59 @@
     box-sizing: border-box;
 }
 
+/* Stili di Header, Nav */
+
 header {
-    height: 100px;
+    height: 80px;
     width: 100%;
-    display:flex;
-    justify-content: space-between;
+    
     /* position: fixed; */
     z-index: 500;
     background: orange;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    
+}
+
+.category, .wish-list {
+    flex-basis:20%;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    padding-right: 10px;
+}
+
+.left {
+    padding-left: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+.logo img {
+    height: 25%;
+}
+
+/* Stili sezione Main  */
+
+main {
+    width: 80%;
+    margin: auto;
 }
