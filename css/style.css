@@ -215,3 +215,9 @@ footer {
     display: flex;
 
 }
+
+/* Regole per far sparire l'immagine... */
+
+.col:hover .card {
+    /* display: none; */
+}
